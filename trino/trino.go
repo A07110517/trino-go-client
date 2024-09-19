@@ -83,10 +83,10 @@ func init() {
 
 var (
 	// DefaultQueryTimeout is the default timeout for queries executed without a context.
-	DefaultQueryTimeout = 60 * time.Second
+	DefaultQueryTimeout = 900 * time.Second
 
 	// DefaultCancelQueryTimeout is the timeout for the request to cancel queries in Trino.
-	DefaultCancelQueryTimeout = 30 * time.Second
+	DefaultCancelQueryTimeout = 600 * time.Second
 
 	// ErrOperationNotSupported indicates that a database operation is not supported.
 	ErrOperationNotSupported = errors.New("trino: operation not supported")
